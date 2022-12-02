@@ -1,0 +1,287 @@
+/* LMSGI. UD02. Tarea Evaluativa 02 Sitio web. Aitor Rey. 02/12/2022*/
+
+/* Enlazar hojas de estilo externas que se vayan a usar */
+@import "normalize.css";
+
+/*Color de fondo uniforme para todas las paginas*/
+body {
+  font-family: 'Jost';
+  font-size: 24px;
+  background-color: #292929;
+}
+
+/*Estilo barra de navegación superior*/
+.nav_superior {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Estilo enlaces de navegación superior*/
+  .nav_superior a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: x-large;
+  }
+
+/*Estilo header. Títulos de página con imagen de fondo*/
+.cabecera {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-image:url(../img/header-background.jpg);
+}
+
+/*Estilo sección "presentacion y titulos"*/
+.inicio_Presentacion_Titulos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/*Estilo articulos dentro de sección "presentacion y titulos"*/
+  .inicio_Presentacion_Titulos article {
+    width: 40%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: solid #ff9200;
+  }
+
+/*Estilo "títulos" posición relativa para icono copa*/  
+.inicio_Titulos {
+  position: relative;
+}
+
+/*Estilo "títulos" posición absoluta para icono copa*/  
+.inicio_Titulos_Txapeldun {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  right: 0;
+}
+
+/*Estilo parrafos dentro de "títulos"*/  
+.inicio_Titulos p {
+  text-align: center;
+}
+
+/*Estilo equipos en página inicio*/  
+.inicio_Equipos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+
+/*Estilo articulos dentro de "Equipos" en página inicio*/
+  .inicio_Equipos article {
+    width: 33%;
+  }
+
+/*Elemento nuevo: se aplica un filtro gris a las imagenes de seccion "Equipos" en página de inicio para que desaparezca al pasar el raton por encima (hover)*/
+.inicio_Equipos_Imagen {
+  width: 90%;  
+  filter: grayscale(50%);
+}
+
+.inicio_Equipos_Imagen:hover {
+  filter: grayscale(0%);
+}
+
+/*Estilo noticias*/
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/*Estilo articulos dentro de sección "noticias"*/
+  .noticias article {
+    text-align: justify;
+    margin: 0.5rem;
+    width: 85%;
+  }
+
+/*Estilo titulo de noticias en página inicio*/
+.noticias_Titulo {
+  width: 100%;
+  text-align: center;
+}  
+
+/*Estilo imagenes en noticias. Usado posicionamiento float para que el texto rodee la imagen*/
+  .noticias img {
+    float: left;
+    width: 20%;
+    margin-right: 0.5rem;
+  }
+/*Estilo footer*/
+  .pie_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+/*Estilo imagenes en footer*/
+  .pie_pagina img {
+    width: 200px;
+  }
+
+/*Estilo barra divisoria en footer*/
+  hr {
+    height: 0.2rem;
+    width: 50%;
+    background-color: orange;
+  }
+
+/*Estilo equipos*/
+.equipos_Detalle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Estilo articulos dentro de página equipos */
+  .equipos_Detalle article{
+    width: 100%;
+    text-align: center;
+  }
+/*Estilo imagenes en página equipos */
+  .equipos_Detalle img{
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+  }
+
+/*Estilo para tablas de equipos*/
+  .equipos_Detalle table {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-collapse: collapse;
+  }
+
+/*Estilo para título de tablas*/
+caption {
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size:xx-large;
+  padding: 0.7rem;
+  color: #ff9200;
+}
+
+/*Estilo fila cabecera de tablas de equipos*/
+.equipos_Detalle th {
+  text-transform: uppercase;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: #ff9200;
+  color:white;
+}
+
+/*Estilo filas y columnas de tablas de equipos*/
+.equipos_Detalle td, tr {
+  text-transform: uppercase;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: black;
+  background-color: #ff9200;
+  border-bottom: 1px solid #292929;
+}
+
+/* Estilo de títulos h1*/
+h1 {
+  color:white;
+  padding: 0.2rem;
+  font-size: 7rem;
+}
+
+/* Estilo de títulos h3*/
+h3 { 
+  color: #ff9200;
+  padding: 0.2rem;
+  font-size: 3.5rem;
+  margin: auto
+}
+
+/* Estilo de títulos h4*/
+h4 { 
+  color: #ffbf00;
+  padding: 0.2rem;
+  font-size: 3rem;
+}
+
+/* Estilo de párrafos*/
+p {
+  text-align: justify;
+  color: white;
+}
+
+/* Estilo de enlaces*/
+a:link {color: white}
+a:visited {color: #ffbf00;}
+a:hover {color: #ff9200;}
+
+/* Estilo de flecha fijada*/
+.flecha_Fijada {
+	position: fixed;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	height: 5rem;
+	width: 5rem;
+}
+
+/* Estilo de formulario contacto*/
+.formulario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Estilo de parrafos en formulario contacto*/
+  .formulario p {
+    text-align: center;
+  }
+
+/* Estilo de elementos en formulario contacto*/
+  .formulario input, textarea, select {
+    width: 80%;
+    border-radius: 0.4rem;
+  }
+
+/* Estilo de filas y columnas de tabla en formulario contacto*/
+  .formulario tr, td {
+    background-color: #292929;
+    color: white;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .fuente_Imagenes {
+    color:white;
+    text-align: center;
+    font-size: small;
+  }

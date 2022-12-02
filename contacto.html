@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html  lang="es">
+<!-- LMSGI. UD02. Tarea Evaluativa 02 Sitio web. Aitor Rey. 02/12/2022-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lviv Basketball</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+<!-- Enlace a fuente utilizda en toda la web-->   
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+<!-- Estilo definido en un archivo externo enlazado -->   
+    <link rel="stylesheet" href="css/estilos.css" >
+</head>
+
+<body>
+<!-- Barra navegacion --> 
+  <nav class="nav_superior" id="inicio">
+    <article>
+      <a href="index.html"><img src="img/Logo-Lviv-Basketball.png" alt="logotipo"></a>
+    </article>
+    <article>
+      <a href="index.html">Inicio</a>
+      <a href="seniormasculino.html">Senior Masculino</a>
+      <a href="seniorfemenino.html">Senior Femenino</a>
+      <a href="bsr.html">BSR</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+    </article>
+  </nav>
+  
+<!-- Título de página --> 
+  <header class="cabecera">
+    <h1>CONTACTO</h1>
+  </header>
+
+  <section class="formulario">
+    <article>
+      <form action="mailto:contacto@lvivbasketball.com" method="post">
+        <table>
+          <tr><td>
+            <label>Nombre</label>
+            <p><input type="text" name="Nombre"></p>
+          </td></tr>
+          <tr><td>
+            <label>¿A quien va dirigido?</label>
+            <p>
+              <select name="Quien">
+              <option value="General">Seleccione un departamento</option>
+              <option value="Directiva">Directiva</option>
+              <option value="Secretaría">Secretaría</option>
+              <option value="SeniorMas">Senior Masculino</option>
+              <option value="SeniorFem">Senior Femenino</option>
+              <option value="BSR">BSR</option>
+              </select>
+            </p>
+          </td></tr>
+          <tr><td>
+            <label>Mensaje</label>
+            <p><textarea name="mensaje" rows="10" cols="50"></textarea></p>
+          </td></tr>
+          <tr><td>
+            <input type="submit" value="Enviar">
+          </td></tr>
+        </table>
+      </form>
+    </article>
+  </section>
+
+<!-- Pie de página -->
+  <footer class="pie_pagina">
+    <hr>
+    <img src="img/Logo-Lviv-Basketball.png" alt="logotipo">
+    <p>Kryvchytska Doroha St, 19, Lviv, Ucrania, 79000</p>
+    <p>- Passion for basket -</p>
+  </footer>
+<!-- Flecha para ir a inicio. Se usa posicionamiento fixed -->
+  <aside>
+    <a href="#inicio"><img src="img/flecha.png" alt="flecha inicio" class="flecha_Fijada"></a> 
+  </aside>
+
+</body> 
+</html>
